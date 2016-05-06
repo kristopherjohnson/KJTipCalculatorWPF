@@ -71,7 +71,8 @@
                 Grid.Column="2"
                 Grid.Row="0"
                 Grid.ColumnSpan="2"
-                Content="_Clear" />
+                Content="_Clear"
+                Command="{Binding ClearSubtotalCommand}" />
 
         <Label Target="{Binding ElementName=TipPercentageTextBox}"
                Grid.Column="0"
@@ -85,11 +86,13 @@
         <Button x:Name="DecrementTipPercentageButton"
                 Grid.Column="2"
                 Grid.Row="1"
-                Content="-" />
+                Content="-"
+                Command="{Binding DecrementTipPercentageCommand}" />
         <Button x:Name="IncrementTipPercentageButton"
                 Grid.Column="3"
                 Grid.Row="1"
-                Content="+" />
+                Content="+"
+                Command="{Binding IncrementTipPercentageCommand}" />
 
         <Label Target="{Binding ElementName=NumberInPartyTextBox}"
                Grid.Column="0"
@@ -100,12 +103,16 @@
                  Grid.Row="2"
                  Text="{Binding Path=NumberInParty}"
                  PreviewTextInput="IntegerTextBox_PreviewTextInput" />
-        <Button Grid.Column="2"
+        <Button x:Name="DecrementNumberInPartyButton"
+                Grid.Column="2"
                 Grid.Row="2"
-                Content="-" />
-        <Button Grid.Column="3"
+                Content="-"
+                Command="{Binding DecrementNumberInPartyCommand}" />
+        <Button x:Name="IncrementNumberInPartyButton"
+                Grid.Column="3"
                 Grid.Row="2"
-                Content="+" />
+                Content="+"
+                Command="{Binding IncrementNumberInPartyCommand}" />
 
         <Label Grid.Column="0"
                Grid.Row="4"

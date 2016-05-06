@@ -1,6 +1,13 @@
 ﻿namespace KJTipCalculatorWPF
 {
-    class TipCalculation
+    /// <summary>
+    /// Model for tip calculator.
+    /// </summary>
+    /// <remarks>
+    /// Set the Subtotal, TipPercentage, and NumberInParty properties, then
+    /// read the values of the computed Tip, Total, and PerPerson properties.
+    /// </remarks>
+    internal class TipCalculation
     {
         public decimal Subtotal = 0;
         public int TipPercentage = 20;
